@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import Wedding from '../components/WeddingSlider'
 
-const WeddingGallery = () => {
+const WeddingPage = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
@@ -13,8 +15,10 @@ const WeddingGallery = () => {
     <>
     <Navbar id="reMargin" toggle={toggle}/>
     <Sidebar isOpen={isOpen} toggle={toggle}/>
+    <Wedding />
+    <Footer />
     </>
   )
 }
 
-export default WeddingGallery
+export default WeddingPage

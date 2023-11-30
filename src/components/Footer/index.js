@@ -1,6 +1,6 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, ExternalFooterLink } from './footerStyle'
 
 const Footer = () => {

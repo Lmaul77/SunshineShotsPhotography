@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import Video from '../../video/video.mp4'
 import { Button } from '../ButtonStyle'
-import { HomeContainer, HomeBg, VideoBg, HomeContent, HomeH1, HomeP, HomeBtnWrapper, ArrowForward, ArrowRight } from './HomeStyle'
+import SSSLarissa from '../../images/SSSLarissa.jpeg'
+import { HomeContainer, HomeBg, FlexContainer, RelativeContainer, StyledImage, HomeContent, HomeH1, HomeP, HomeBtnWrapper, ArrowForward, ArrowRight } from './HomeStyle'
 
 const HomeSection = () => {
     const [hover, setHover] = useState(false)
@@ -13,7 +13,11 @@ const HomeSection = () => {
   return (
     <HomeContainer id='home'>
         <HomeBg>
-            <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+        <FlexContainer>
+            <RelativeContainer>
+                <StyledImage src={SSSLarissa} alt='' />
+            </RelativeContainer>
+        </FlexContainer>
         </HomeBg>
         <HomeContent>
             <HomeH1>SunShineShots Photography</HomeH1>

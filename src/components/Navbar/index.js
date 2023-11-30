@@ -32,7 +32,7 @@ const Navbar = ({ toggle }) => {
                 SSS Photography
             </NavLogo>
             <MobileIcon onClick={toggle}>
-                <FaBars />
+                <FaBars color='#000000' />
             </MobileIcon>
             <NavMenu>
                 <NavItem>
@@ -62,7 +62,7 @@ const Navbar = ({ toggle }) => {
                     offset={-80}
                     >Newborns</NavLinks>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                     <NavLinks to='boudiour'
                     smooth={true}
                     duration={500}
@@ -70,7 +70,7 @@ const Navbar = ({ toggle }) => {
                     exact='true'
                     offset={-80}
                     >Boudiour</NavLinks>
-                </NavItem>
+                </NavItem> */}
                 <NavItem>
                     <NavLinks to='about'
                     smooth={true}

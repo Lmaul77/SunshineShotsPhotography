@@ -3,6 +3,7 @@ import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarL
 
 
 const Sidebar = ({ isOpen, toggle }) => {
+    console.log("Sidebar props: ", {isOpen, toggle})
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
         <Icon onClick={toggle}>
@@ -10,24 +11,24 @@ const Sidebar = ({ isOpen, toggle }) => {
         </Icon>
         <SidebarWrapper>
             <SidebarMenu>
-                <SidebarLink to='wedding' onClick={toggle}>
+                <SidebarLink to='/weddinggallery' onClick={toggle}>
                     Weddings
                 </SidebarLink>
-                <SidebarLink to='portrait' onClick={toggle}>
+                <SidebarLink to='/portraitgallery' onClick={toggle}>
                     Portraits
                 </SidebarLink>
-                <SidebarLink to='newborn' onClick={toggle}>
+                <SidebarLink to='/newborngallery' onClick={toggle}>
                     Newborns
                 </SidebarLink>
-                <SidebarLink to='boudiour' onClick={toggle}>
-                    Boudiour
+                <SidebarLink to='/' onClick={toggle}>
+                    Home
                 </SidebarLink>
-                <SidebarLink to='about' onClick={toggle}>
+                <SidebarLink to='/about' onClick={toggle}>
                     About
                 </SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
-                <SidebarRoute to='contact' onClick={toggle}>
+                <SidebarRoute to='/contact' onClick={toggle}>
                     Contact
                 </SidebarRoute>
             </SideBtnWrap>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './footerStyle'
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, ExternalFooterLink } from './footerStyle'
 
 const Footer = () => {
     
@@ -35,29 +35,29 @@ const Footer = () => {
                         <FooterLinkTitle>
                             Social Media
                         </FooterLinkTitle>
-                            <FooterLink to='test'>
+                            <ExternalFooterLink href="https://www.facebook.com/SunShineShotsphotography" target="_blank" rel="noopener noreferrer">
                                 Facebook
-                            </FooterLink>
-                            <FooterLink to='test'>
+                            </ExternalFooterLink>
+                            <ExternalFooterLink href="https://www.instagram.com/itslarissamaul/?hl=en" target="_blank" rel="noopener noreferrer">
                                 Instagram
-                            </FooterLink>
+                            </ExternalFooterLink>
                     </FooterLinkItems>
                     <FooterLinkItems>
                         <FooterLinkTitle>
                             Galleries
                         </FooterLinkTitle>
-                            <FooterLink to='test'>
+                            <FooterLink to='/weddinggallery'>
                                 Weddings
                             </FooterLink>
-                            <FooterLink to='test'>
+                            <FooterLink to='/portraitgallery'>
                                 Portraits
                             </FooterLink>
-                            <FooterLink to='test'>
+                            <FooterLink to='/newborngallery'>
                                 Newborns
                             </FooterLink>
-                            <FooterLink to='test'>
+                            {/* <FooterLink to='test'>
                                 Boudiour
-                            </FooterLink>
+                            </FooterLink> */}
                     </FooterLinkItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
@@ -70,10 +70,10 @@ const Footer = () => {
                         SSS Photography © 2018 All rights reserved.
                     </WebsiteRights>
                     <SocialIcons>
-                        <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+                        <SocialIconLink href="https://www.facebook.com/SunShineShotsphotography" target='_blank' aria-label='Facebook'>
                             <FaFacebook />
                         </SocialIconLink>
-                        <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+                        <SocialIconLink href='https://www.instagram.com/itslarissamaul/?hl=en' target='_blank' aria-label='Instagram'>
                             <FaInstagram />
                         </SocialIconLink>
                     </SocialIcons>

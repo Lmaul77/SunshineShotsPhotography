@@ -11,7 +11,7 @@ const HomeSection = () => {
     }
 
   return (
-    <HomeContainer id='home'>
+    <HomeContainer>
         <HomeBg>
         <FlexContainer>
             <RelativeContainer>
